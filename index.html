@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MATRIX CALCULATOR</title>
+	<script src="matcal.js"></script>
+	<link rel="stylesheet" href="design.css">
+</head>
+
+<body bgcolor="black" text="green"> 
+
+	<header>
+		<h2 data-
+		text="MATRIX CALCULATOR">MATRIX CALCULATOR</h2></header>
+	<div id="upper">
+		<div id="matrix1" class="parent">
+			<h1 class="title">Matrix A</h1>
+			<input class="m1r1" type="text" value="0"/>
+			<input class="m1r1" type="text" value="0"/>
+			<input class="m1r1" type="text" value="0"/>
+			<input class="m1r2" type="text" value="0"/>
+			<input class="m1r2" type="text" value="0"/>
+			<input class="m1r2" type="text" value="0"/>
+			<input class="m1r3" type="text" value="0"/>
+			<input class="m1r3" type="text" value="0"/>
+			<input class="m1r3" type="text" value="0"/>		
+			
+		</div>
+		
+		<div id="matrix2" class="parent">
+			<h1 class="title">Matrix B</h1>
+			<input class="m2r1" type="text" value="0"/>
+			<input class="m2r1" type="text" value="0"/>
+			<input class="m2r1" type="text" value="0"/>
+			<input class="m2r2" type="text" value="0"/>
+			<input class="m2r2" type="text" value="0"/>
+			<input class="m2r2" type="text" value="0"/>
+			<input class="m2r3" type="text" value="0"/>
+			<input class="m2r3" type="text" value="0"/>
+			<input class="m2r3" type="text" value="0"/>		
+		</div>
+		<div id="operations">
+			<input class="operation" type="button" value="A x B" onclick="mc.multiplyMatrix()"/>
+			<input class="operation" type="button" value="A + B" onclick="mc.addMatrix()"/>
+			<input class="operation" type="button" value="A - B" onclick="mc.subtractMatrix()"/>
+		</div>
+		<div class="functions">
+			<input class="function" type="button" value="Determinant" onclick="mc.calculateDeterminant()"/>
+			<input class="function" type="button" value="Transpose" onclick="mc.transposeMatrix()"/>
+			<input class="function" type="button" value="Invert" onclick="mc.invertMatrix()"/>
+			<input class="function" type="button" value="Rank" onclick="mc.calculateRank()"/>
+		</div>
+	</div>
+	<br>
+	<div id="lower">
+			<textarea wrap="soft" rows="10" cols="20" class="rsltbox" id="console" disabled></textarea>
+	</div>
+	<div ID="NAMES"> 
+		<ul>
+			<li>SUBHASISH MORAN #ET22BTHCS094
+			</li>
+			<P><li>ARION DUTTA #ET22BTHCS093</li></P>
+			<P><li>MRIGEN DEKA #ET22BTHCS081</li></P>
+			<P><li>NIYOR BARMAN #ET22BTHCS080</li></P>
+			<P><li>RAMJAN ALI #ET22BTHCS113</li></P>
+			<P><li>ABHIGYAN SADHANIDAR #ET22BTHCS096</li></P>
+		  </ul>  
+
+
+
+	</div>
+</body>
+</html>

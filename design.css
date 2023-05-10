@@ -1,0 +1,152 @@
+header {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+
+#upper {
+	margin-left: auto;
+    margin-right: auto;
+	display: flex;
+	flex-flow: row wrap;
+	width: 30em;
+	background: teal;
+	align-items: center;
+	justify-content: center;
+}
+H2{
+	position: relative;
+	font-size: 5rem;
+	font-family: sans-serif;
+	-webkit-text-stroke: 0.3vw
+	#383d52;
+		text-transform: uppercase;
+}	
+h2::before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	color: #4fed51;
+	-webkit-text-stroke: 0vw
+	#383d52;
+	border-right: 2px solid #4fed51;
+	overflow: hidden;
+	animation: animate 6s linear infinite;}
+@keyframes animate{
+	0%{
+		width: 0%
+	}
+	70%{
+		width: 100%;
+	}
+}
+
+#matrix1, #matrix2{
+	order: 1;
+	width: 9em;
+	height: 40%;
+	
+}
+
+#operations {
+	order: 1;
+	width: 5em;
+	height: 40%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+.operation {
+	width: 5em;
+	height: 10%
+}
+
+.parent {
+	display: flex;
+	flex-flow: row wrap;
+	width: 9em;
+	background: teal;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	order: 1;
+	font-family: "Times New Roman", serif;
+	width: 9em;
+	height: 10%;
+	text-align: center;
+}
+
+.m1r1, .m2r1 {
+	order: 2;
+	width: 3em;
+	height: 10%;
+	text-align: center;
+}
+
+.m1r2, .m2r2 {
+	order: 3;
+	width: 3em;
+	height: 10%;
+	text-align: center;
+}
+
+.m1r3, .m2r3 {
+	order: 4;
+	width: 3em;
+	height: 70%;
+	text-align: center;
+}
+
+.functions {
+	order: 5;
+	width: 9em;
+	height: 40%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.function {
+	width: 8em;
+	height: 10%;
+	border-radius: 2em;
+	
+}
+
+#console {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 40%;
+	height: 50%;
+}
+body{
+	color: yellowgreen;
+}
+#matrix1{
+	padding-left:30px ;
+	padding-right: 50px;
+}
+#matrix2{
+	padding-right: 30px;
+	padding-left: 20px;
+}
+#NAMES{
+	font-family:'Times New Roman', Times, serif;
+	color: peachpuff;
+}
+img{
+	align-items: center;
+}
